@@ -1,11 +1,14 @@
 package Implementation;
 
 public class Checkout {
-    public void add(int count, int price) {
 
+    int total = 0;
+
+    public void add(int count, int price) {
+        this.total = this.total + (count * price);
     }
 
     public int total() {
-        return 0;
+        return this.total;
     }
 }
